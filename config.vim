@@ -5,7 +5,7 @@
 " ---------------
 " Color
 " ---------------
-set background=dark
+set background=light
 colorscheme jellybeans
 " Force 256 color mode if available
 if $TERM =~ '-256color'
@@ -135,3 +135,5 @@ set mouse=a    " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux

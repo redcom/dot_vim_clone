@@ -148,8 +148,10 @@ nnoremap <leader>fj <Esc>:%!underscore print<CR><Esc>:set filetype=json<CR>
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>:wincmd =<CR>
 nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>:wincmd =<CR>
 
-" Close the current window
-nnoremap <silent> <m-w> :close<CR>
+nnoremap <silent> <leader>ff :CtrlPMixed<CR>
+nmap <C-c> :b#<bar>bd#<bar>b<CR>
+nmap <C-l> :bn <CR>
+nmap <C-h> :bp <CR>
 
 " ---------------
 " Typo Fixes
