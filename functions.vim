@@ -165,3 +165,5 @@ function! WordFrequency() range
   sort i
 endfunction
 command! -range=% WordFrequency <line1>,<line2>call WordFrequency()
+
+

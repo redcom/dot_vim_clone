@@ -6,7 +6,7 @@
 " Color
 " ---------------
 set background=light
-colorscheme default
+colorscheme peachpuff
 " Force 256 color mode if available
 if $TERM =~ '-256color'
    set t_Co=256
@@ -15,6 +15,7 @@ endif
 " -----------------------------
 " File Locations
 " -----------------------------
+set shell=/bin/zsh
 set backupdir=~/.vim/.backup// " Double // causes backups to use full file path
 set directory=~/.vim/.tmp//
 set spellfile=~/.vim/spell/custom.en.utf-8.add
@@ -135,5 +136,30 @@ set mouse=a    " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+
+let g:ag_prg="/usr/local/bin/ag --vimgrep"
+let g:ag_working_path_mode="r"
+
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+
+" Use # to get a variable interpolation (inside of a string)}
+" ysiw#   Wrap the token under the cursor in #{}
+" Thanks to http://git.io/_XqKzQ
+let g:surround_35  = "#{\r}"
+
+let g:togglecursor_leave='line'
+
+" Shortcuts for common surrounds
+map <leader>y# ysi"#
+autocmd BufWritePre,TextChanged *.js Neoformat
+autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --parser\ flow\ --single-quote\ --print-width\ 100\ --no-semi\ --trailing-comma\ es5
+" Use formatprg when available
+let g:neoformat_try_formatprg = 1
+
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*node_modules*,     " MacOSX/Linux
