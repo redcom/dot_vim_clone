@@ -16,7 +16,7 @@ call plug#begin()
 Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
+Plug 'tomtom/tcomment_vim'
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'sbdchd/neoformat'
 Plug 'godlygeek/tabular'
@@ -36,8 +36,8 @@ Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'prettier/vim-prettier', {
-    \ 'do': 'npm install',
-    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
+   \ 'do': 'npm install',
+   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 
 call plug#end()
 
