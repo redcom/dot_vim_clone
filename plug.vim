@@ -35,9 +35,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'prettier/vim-prettier', {
-   \ 'do': 'npm install',
-   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
+" Plug 'prettier/vim-prettier', {
+"    \ 'do': 'npm install',
+"    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 
 call plug#end()
 

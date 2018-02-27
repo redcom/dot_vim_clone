@@ -156,6 +156,7 @@ let g:togglecursor_leave='line'
 
 " Shortcuts for common surrounds
 map <leader>y# ysi"#
+
 autocmd BufWrite *.js Neoformat
 autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --parser\ babylon\ --single-quote\ --print-width\ 100\ --no-semi\ --trailing-comma\ none
 " Use formatprg when available
