@@ -7,17 +7,6 @@
 " All of the plugins are installed with Vundle from this file.
 source ~/.vim/plug.vim
 
-" Automatically detect file types. (must turn on after Vundle)
-filetype plugin indent on
-
-" Platform (Windows, Mac, etc.) configuration.
-source ~/.vim/platforms.vim
-" All of the Vim configuration.
-source ~/.vim/config.vim
-" New commands
-source ~/.vim/commands.vim
-" All hotkeys, not dependant on plugins, are mapped here.
-
 " Use # to get a variable interpolation (inside of a string)}
 " ysiw#   Wrap the token under the cursor in #{}
 " Thanks to http://git.io/_XqKzQ
@@ -27,10 +16,6 @@ let g:togglecursor_leave='line'
 
 " Shortcuts for common surrounds
 map <leader>y# ysi"#
-
-autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --parser\ flow\ --single-quote\ --trailing-comma\ es5
-" Use formatprg when available
-let g:neoformat_try_formatprg = 1
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on

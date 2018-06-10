@@ -136,6 +136,8 @@ nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
 "          # Test 123
 "          # --------
 nnoremap <silent> <leader>cul :normal "lyy"lpwvLr-^"lyyk"lP<cr>
+nnoremap <silent> <leader>c :TComment<CR>
+vnoremap <silent> <leader>c :TComment<CR>
 
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
