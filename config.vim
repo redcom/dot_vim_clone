@@ -163,6 +163,8 @@ map <leader>y# ysi"#
 "let g:neoformat_try_formatprg = 1
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-semi'
+
 let g:prettier#exec_cmd_async = 1
 " max line length that prettier will wrap on
 " Prettier default: 80
