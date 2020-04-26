@@ -13,7 +13,7 @@
 
 call plug#begin()
 
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 " Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
@@ -34,9 +34,10 @@ Plug 'jszakmeister/vim-togglecursor'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'prettier/vim-prettier', {
-      \ 'do': 'yarn install',
-      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
+Plug 'tpope/vim-fugitive'
+"Plug 'prettier/vim-prettier', {
+"     \ 'do': 'yarn install',
+"    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 
 Plug 'w0rp/ale'
 
