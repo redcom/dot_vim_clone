@@ -6,7 +6,7 @@
 " Color
 " ---------------
 set background=dark
-colorscheme default
+colorscheme desert
 " Force 256 color mode if available
 if $TERM =~ '-256color'
    set t_Co=256
@@ -141,7 +141,7 @@ set complete=.,w,b,u,U
 let g:ag_prg="/usr/local/bin/ag --vimgrep"
 let g:ag_working_path_mode="r"
 
-let g:ackprg = 'ag --vimgrep --smart-case -U --ignore node_modules'
+let g:ackprg = 'ag --vimgrep --smart-case -U --ignore node_modules --ignore build'
 cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
