@@ -167,3 +167,6 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+" CoC extensions
+let g:coc_global_extensions = ['coc-tsserver']

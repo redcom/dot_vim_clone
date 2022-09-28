@@ -21,7 +21,6 @@ Plug 'tomtom/tcomment_vim'
 "Plug 'sbdchd/neoformat'
 Plug 'godlygeek/tabular'
 " Plug 'styled-components/vim-styled-components'
-Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'mileszs/ack.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -39,7 +38,14 @@ Plug 'tpope/vim-fugitive'
 "     \ 'do': 'yarn install',
 "    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 
+
 Plug 'w0rp/ale'
+
+Plug 'leafgarland/typescript-vim' " TypeScript syntax
+Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plug 'jparise/vim-graphql'        " GraphQL syntax
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'github/copilot.vim', {'branch': 'release'}
 
 call plug#end()
 
