@@ -14,7 +14,8 @@
 call plug#begin()
 
 " Plug 'SirVer/ultisnips'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 " Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'tomtom/tcomment_vim'
@@ -31,7 +32,7 @@ Plug 'tpope/vim-surround'
 Plug 'groenewege/vim-less'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+" Plug 'mxw/vim-jsx'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'tpope/vim-fugitive'
 "Plug 'prettier/vim-prettier', {
@@ -44,8 +45,9 @@ Plug 'w0rp/ale'
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'github/copilot.vim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'github/copilot.vim', {'branch': 'release'}
 
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
