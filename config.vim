@@ -183,3 +183,5 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
+
+set rtp+=/opt/homebrew/opt/fzf
