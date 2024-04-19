@@ -185,3 +185,5 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 set rtp+=/opt/homebrew/opt/fzf
+
+set maxmempattern=5000
